@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="home_container" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+   <VBox prefHeight="400.0" prefWidth="180.0" styleClass="home_hom_container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="CRYPTOCalc" />
+   </VBox>
+   <VBox layoutX="218.0" layoutY="25.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container">
+      <Label text="Choose One Of The Following :" />
+      <Button fx:id="classical_btn" mnemonicParsing="false" text="Classical Cryptography" />
+      <Button fx:id="modern_btn" mnemonicParsing="false" text="Modern Cryptography" />
+   </VBox>
+</AnchorPane>

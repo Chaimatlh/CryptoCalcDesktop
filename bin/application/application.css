@@ -1,0 +1,76 @@
+.home_container{
+    -fx-background-color: #EEEEEE;
+}
+/* for the container Styles */
+.home_hom_container{
+    -fx-background-color: #03254E;
+    -fx-alignment: center;
+}
+.home_hom_container Text{
+    -fx-font-size: 2em;
+    -fx-fill: #FFFFFF;
+}
+.home_hom_container FontAwersomeIconView {
+    -fx-fill:#FFFFFF;
+}
+/* choose stylres*/
+.login_form_container {
+    /*-fx-background-color:#222E50 ;
+*/    -fx-spacing: 15;
+    -fx-alignment: top_left;
+}
+.login_form_container Label {
+    /*-fx-spacing: 30;
+    /*-fx-alignment: top_left;*/
+    -fx-alignment: center;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-padding: 20 10px;
+}
+.login_form_container Button{
+    -fx-background-color:#03254E ;
+    -fx-text-fill: #FFFFFF;
+    -fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size:1.5em ;
+}
+.login_form_container Button:hover {
+    -fx-cursor: hand;
+}
+
+
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button_from_container {
+	-fx-background-color:#03254E ;
+	-fx-text-fill: #FFFFFF;
+	-fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size:1.5em ;
+}
+
+.button_from_container :hover {
+    -fx-cursor: hand;
+}
+
+.label_form_container {
+    /*-fx-spacing: 30;
+    /*-fx-alignment: top_left;*/
+    -fx-alignment: center;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-padding: 5	 10px;
+    -fx-text-fill: #03254E ;
+}
+.button_fromm_container {
+	-fx-background-color:#949a9e ;
+	-fx-text-fill: #03254E ;
+	-fx-pref-width: 350;
+    -fx-pref-height: 30;
+    -fx-font-size:1.5em ;
+}
+
+
+
+
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RsaEncryptPageController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="350.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="input_btn" alignment="TOP_CENTER" prefWidth="350.0" promptText="Enter A Number To Encrypt ">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <TextField fx:id="keyE" promptText="Choose E" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <TextField fx:id="keyN" promptText="Choose N" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Button fx:id="Encryption_btn" mnemonicParsing="false" prefHeight="40.0" prefWidth="333.0" style="-fx-pref-width: 150;" styleClass="button_from_container" text="Encryption" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextArea fx:id="output_btn" editable="false" prefHeight="120.0" prefWidth="350.0" wrapText="true">
+                     <HBox.margin>
+                        <Insets bottom="20.0" />
+                     </HBox.margin></TextArea>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <Label prefHeight="71.0" prefWidth="401.0" styleClass="label_form_container" text="  RSA:          " BorderPane.alignment="TOP_LEFT">
+         <graphic>
+            <HBox prefHeight="31.0" prefWidth="256.0">
+               <children>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onAction="#switchToScene" text="Back" textFill="#03254e">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="200.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </graphic></Label>
+   </top>
+</BorderPane>

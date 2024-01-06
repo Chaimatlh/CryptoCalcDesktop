@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClassicalPageController">
+   <center>
+      <VBox alignment="TOP_CENTER" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="label_form_container" text="Choose One Of The Algorithm:" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <Button fx:id="ceasar_btn" mnemonicParsing="false" styleClass="button_from_container" text="Ceasar Cipher" />
+                  <Button fx:id="affine_btn" mnemonicParsing="false" styleClass="button_from_container" text="Affine Cipher " />
+                  <Button fx:id="vegenaire_btn" mnemonicParsing="false" styleClass="button_from_container" text="Vegenaire Cipher " />
+                  <Button fx:id="hill_btn" alignment="CENTER" mnemonicParsing="false" styleClass="button_from_container" text="Hill Cipher " />
+                  <Button mnemonicParsing="false" onAction="#switchToScene" styleClass="button_fromm_container" text="Back To The Home Page" textFill="#949a9ee0" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
